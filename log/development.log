@@ -1,0 +1,35 @@
+New Relic not installed; skipping New Relic integration
+New Relic not installed; skipping New Relic integration
+CQL (111ms) CREATE TABLE posts ("id" timeuuid, "title" text, "body" text, "updated_at" timestamp, PRIMARY KEY ((id)))
+Started GET "/" for 127.0.0.1 at 2018-10-01 14:33:03 +1000
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+CQL (21ms) SELECT * FROM posts LIMIT 1000
+  Rendered posts/index.html.erb within layouts/application (178.6ms)
+Completed 200 OK in 1092ms (Views: 1033.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-10-01 14:33:09 +1000
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (31.7ms)
+  Rendered posts/new.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 76ms (Views: 60.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-10-01 14:33:16 +1000
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+CQL (12ms) SELECT * FROM posts LIMIT 1000
+  Rendered posts/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 71ms (Views: 63.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-01 14:47:28 +1000
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+CQL (13ms) SELECT * FROM posts LIMIT 1000
+  Rendered posts/index.html.erb within layouts/application (117.2ms)
+Completed 200 OK in 593ms (Views: 543.7ms)
+
+
