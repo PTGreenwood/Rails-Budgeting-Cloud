@@ -1,0 +1,62 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+  @import "bootstrap";
+
+  $light-blue: #30BCED; //rgb(48,188,237)
+  $off-white: #F0EDEE; //rgb(240,237,238)
+  $green: #04A777; //rgb(4,167,119)
+  $secondary-grey: #2E3138; //rgb(46,49,56)
+  $dark-grey: #050505; //rgb(5,5,5)
+  $red: #C4332D; // rgb(196,51,45)
+
+
+  // Notice and Alert Styling
+  #notification-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 999;
+    text-align: center;
+    background-color: rgba(48,188,237, 0.75);
+
+  }
+
+  .notice {
+    padding: 1.2rem 0;
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .alert {
+    padding: 1.2rem 0;
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+
+  .bg-gradient-sky {
+      background: #93a5cf; /* Old browsers */
+      background: -moz-linear-gradient(top, #93a5cf 0%, #e4efe9 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #93a5cf 0%,#e4efe9 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #93a5cf 0%,#e4efe9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93a5cf', endColorstr='#e4efe9',GradientType=0 ); /* IE6-9 */
+ }

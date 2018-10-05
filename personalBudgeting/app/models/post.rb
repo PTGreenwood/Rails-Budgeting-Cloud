@@ -1,7 +1,7 @@
 class Post
   include Cequel::Record
 
-  key :id, :timeuuid, auto: true
+  key :id, :int
   column :title, :text
   column :body, :text
 

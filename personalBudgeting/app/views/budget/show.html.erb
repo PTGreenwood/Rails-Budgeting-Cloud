@@ -1,0 +1,339 @@
+<head>
+  <%= stylesheet_link_tag params[:controller] %>
+</head>
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm" style="margin-right: -40px"><h1 style="margin-top: 38px">MY BUDGET</h1>
+        </div>
+
+        <div class="col-sm mt-5">
+        <%= form_tag(:controller => "budget", :action => "update_values") do %>
+            <%= select_tag 'selected_user', options_for_select(@users.map { |obj| [obj['email'], obj['userid']] }) %>
+            <%= submit_tag("Update user", :class => "btn-secondary")%>
+        <% end %>
+        </div>
+    </div>
+
+    <div class="row" style="padding: 25px 0">
+        <!-- Income -->
+        <div class="col-lg">
+
+            <!-- Begin Layout of Budget things -->
+            <div class="card">
+                <div class="card-header text-white bg-success">
+                    <strong>Income Streams</strong>
+                    <button type="button" class="btn-dark float-right rounded"
+                    data-toggle="modal" data-target="#login"
+                    onclick="openTab(event, 'Sign_in')" style="cursor: pointer"> New</button>
+                </div>
+                <!-- incometype | incomeid | userid | amount | description -->
+                <table class="table table-sm text-center table-hover" style="cursor: pointer; margin-bottom: -2px;">
+                  <thead class="thead-dark">
+                    <tr class="">
+                      <th scope="col">#</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col"> </th>
+                      <th scope="col"> </th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <% counter = 1 %>
+                    <% @income.each do |row| %>
+                        <%= form_tag(:controller => "budget", :action => "update_income_row", :row => "#{row['incomeid']}") do %>
+                        <tr>
+                            <th scope="row"><%= counter %></th>
+                            <!--td contenteditable><%= row['category'] %></td-->
+                            <td><%= text_field_tag 'edit_income_cat', "", value: "#{row['category']}", :class => "form-control field_default text-center"%></td>
+                            <td><%= text_field_tag 'edit_income_desc', "", value: "#{row['description']}", :class => "form-control field_default text-center"%></td>
+                            <td><%= text_field_tag 'edit_income_amt', "", value: "#{number_with_precision(row['amount'], :precision => 2)}", :type => "number", :class => "form-control field_default text-center", :step => :any%></td>
+                            <!--td contenteditable><%#= row['description'] %></td-->
+                            <!--td contenteditable>$<%#= number_with_precision(row['amount'], :precision => 2) %></td-->
+
+                            <td><button type="submit" class="btn-dark rounded float-right" style="margin-right: 15px; cursor: pointer">Save</button></td>
+                        <%end%>
+
+                            <%= form_tag(:controller => "budget", :action => "remove_income", :row => "#{row['incomeid']}") do %>
+                                <td><button type="submit" class="btn-dark rounded" style="margin-right: 15px; cursor: pointer">X</button></td>
+                            <% end %>
+                        </tr>
+                        <% counter += 1 %>
+                    <% end %>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td colspan='4' class="text-right">
+                            <strong>Total Income:</strong>
+                          <%= @totalIncome.each do |amt| %>
+                            $<%=number_with_precision(amt['system.sum(amount)'], :precision => 2)%>
+                            <%break%>
+                          <%end%>
+                        </td>
+                    </tr>
+                  </tbody>
+
+                </table>
+            </div> <!-- End Card -->
+        </div> <!-- End Column -->
+
+    </div> <!-- End Row -->
+    <br>
+    <div class="row">
+        <!-- Expenses -->
+        <div class="col-lg">
+
+            <!-- Begin Layout of Budget things -->
+
+            <div class="card">
+                <div class="card-header text-white bg-danger">
+                    <strong>Expenses</strong>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn-dark float-right rounded"
+                    data-toggle="modal" data-target="#register"
+                    onclick="openTab(event, 'create_expense')" style="cursor: pointer"> New</button>
+
+                </div>
+                <div class="table-responsive">
+                <!-- incometype | incomeid | userid | amount | description -->
+                <table class="table table-sm text-center table-hover" style="cursor: pointer; margin-bottom: -2px;">
+                  <thead class="thead-dark">
+                    <tr class="">
+                      <th scope="col">#</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col"> </th>
+                      <th scope="col"> </th>
+                    </tr>
+                  </thead>
+                  <tbody  style="overflow-x: scroll;">
+                    <%@expenses.each do |row| %>
+                        <%= form_tag(:controller => "budget", :action => "update_expense_row", :row => "#{row['expenseid']}") do %>
+                        <tr>
+                            <th scope="row"><%= row['expenseid'] %></th>
+                            <!--td contenteditable><%= row['category'] %></td-->
+                            <td><%= text_field_tag 'edit_expense_cat', "", value: "#{row['category']}", :class => "form-control field_default text-center"%></td>
+                            <td><%= text_field_tag 'edit_expense_desc', "", value: "#{row['description']}", :class => "form-control field_default text-center"%></td>
+                            <td><%= text_field_tag 'edit_expense_amt', "", value: "#{number_with_precision(row['amount'], :precision => 2)}", :type => "number", :class => "form-control field_default text-center", :step => :any%></td>
+                            <!--td contenteditable><%#= row['description'] %></td-->
+                            <!--td contenteditable>$<%#= number_with_precision(row['amount'], :precision => 2) %></td-->
+
+                            <td><button type="submit" class="btn-dark rounded " style="margin-right: 15px; cursor: pointer">Save</button></td>
+
+                        <%end%>
+                        <%= form_tag(:controller => "budget", :action => "remove_expense", :row => "#{row['expenseid']}") do %>
+                            <td><button type="submit" class="btn-dark rounded" style="margin-right: 15px; cursor: pointer">X</button></td>
+                            <% end %>
+                        </tr>
+
+
+
+                        <!--tr>
+                            <th scope="row"><%= row['expenseid'] %></th>
+                            <td><%=row['category']%></td>
+                            <td><%= row['description'] %></td>
+                            <td>$<%= number_with_precision(row['amount'], :precision => 2) %></td>
+                        </tr-->
+                    <% end %>
+
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td colspan='4' class="text-right">
+                            <strong>Total Expenditure:</strong>
+                          <%= @totalExpense.each do |amt| %>
+                            $<%=number_with_precision(amt['system.sum(amount)'], :precision => 2)%>
+                            <%break%>
+                          <%end%>
+                        </td>
+                    </tr>
+                  </tbody>
+
+                </table>
+            </div>
+            </div> <!-- End Card -->
+        </div> <!-- End Column -->
+        </div> <!-- End Row -->
+
+  </div>
+</div>
+
+<!-- Modal for Income -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="accountModal" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header-income">
+      <div class="tab">
+        <button class="tablinks active" id="Sign_in0">
+            <% image_tag("/images/login_icon.png", :style => "width: 15px; height: 15px; margin-left: -10px; margin-top: -4px;")%>New Income Stream</button>
+
+      </div>
+    </div>
+    <div class="modal-body">
+        <!-- Tab content -->
+        <div id="Sign_in" class="tabcontent" style="display:block">
+        <%= form_tag url_for(action: 'new_income'), method: 'post' do %>
+            <br>
+            <!-- First field -->
+            <div class="form-group row">
+                <div class="col-sm-1">
+                  <!--img src="assets/images/email_icon.png", class="icon_img"-->
+                </div>
+                <div class="col-sm-11">
+                  <div class="field">
+                    <!--input type="email" class="form-control field_default" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email"-->
+                    <%= text_field_tag 'income_category', "", placeholder: "Income Category", :class => "form-control field_default"%>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group row">
+          </div>
+            <!-- 2nd Field -->
+            <div class="form-group row">
+                <div class="col-sm-1">
+                <!--img src="images/pass_icon.png", class="icon_img_lock"-->
+                </div>
+                <div class="col-sm-11">
+                    <div class="field">
+                    <!--input type="password" class="form-control field_default" id="exampleInputPassword1" placeholder="Password"-->
+                    <%= text_field_tag 'income_description', "", placeholder: "Description of Income type", :class => "form-control field_default"%>
+                    </div>
+                </div>
+            </div>
+            <!-- Third field -->
+            <div class="form-group row">
+                <div class="col-sm-1">
+                <!--img src="images/pass_icon.png", class="icon_img_lock"-->
+                </div>
+                <div class="col-sm-11">
+                    <div class="field">
+                    <!--input type="password" class="form-control field_default" id="exampleInputPassword1" placeholder="Password"-->
+                    <%= text_field_tag 'income_amt', "", placeholder: "Amount", :type => "number", :class => "form-control field_default", :step => :any%>
+                    </div>
+                </div>
+            </div>
+            <!-- End Third field -->
+            <div class="form-group row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <div class="actions" style="text-align: center">
+                        <button type="submit" class="submit_button">Submit</button>
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+        <% end %>
+
+        <hr>
+        <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8">
+            <br/><br/>
+          </div>
+            <div class="col-sm-4">
+              <button class="modal_close" id="close_modal" data-dismiss="modal"> Close </button>
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+
+    </div> <!-- End Modal body -->
+  </div> <!-- End Modal content -->
+</div> <!-- End Modal Diag -->
+</div> <!-- End MOdal -->
+
+<!-- Modal for Expenses -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="accountModal" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header-expense">
+      <div class="tab">
+        <button class="active tab-expenses" id="Sign_in0">
+            <% image_tag("/images/login_icon.png", :style => "width: 15px; height: 15px; margin-left: -10px; margin-top: -4px;")%>New Expense Stream</button>
+
+      </div>
+    </div>
+    <div class="modal-body">
+        <!-- Tab content -->
+        <div id="create_expense" class="tabcontent" style="display:block">
+        <!--form-->
+        <%= form_tag url_for(action: 'new_expense'), method: 'post' do %>
+            <br>
+            <!-- Type/Category -->
+            <div class="form-group row">
+            <div class="col-sm-1">
+              <!--img src="assets/images/email_icon.png", class="icon_img"-->
+            </div>
+            <div class="col-sm-11">
+              <div class="field">
+                <!--input type="text" class="form-control field_default" id="expense_category" aria-describedby="emailHelp" placeholder="Expense Category"-->
+                <%= text_field_tag 'expense_category', "", placeholder: "Expense Category", :class => "form-control field_default"%>
+              </div>
+            </div>
+          </div>
+            <div class="form-group row">
+          </div>
+
+          <!-- Description -->
+            <div class="form-group row">
+          <div class="col-sm-1">
+              <!--img src="images/pass_icon.png", class="icon_img_lock"-->
+          </div>
+          <div class="col-sm-11">
+            <div class="field">
+              <!--input type="text" class="form-control field_default" id="expense_description" placeholder="Description of Expense"-->
+              <%= text_field_tag 'expense_description', "", placeholder: "Description of Expense", :class => "form-control field_default"%>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!-- Amount -->
+        <div class="form-group row">
+        <div class="col-sm-1">
+          <!--img src="assets/images/email_icon.png", class="icon_img"-->
+        </div>
+        <div class="col-sm-11">
+          <div class="field">
+            <!--input type="number" class="form-control field_default" id="expense_amt_field" aria-describedby="emailHelp" placeholder="Amount"-->
+            <%= text_field_tag 'expense_amt', "", placeholder: "Amount", :type => "number", :class => "form-control field_default", :step => :any%>
+          </div>
+        </div>
+      </div>
+            <!-- Submit button -->
+        <div class="form-group row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <div class="actions" style="text-align: center">
+                        <button type="submit" class="submit_button">Submit</button>
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+        <!--/form-->
+        <% end %>
+
+        <hr>
+        <!-- Footer thing -->
+        <div class="container-fluid">
+            <div class="row">
+          <div class="col-sm-8">
+            <br/>
+            <br />
+          </div>
+            <div class="col-sm-2">
+              <button class="modal_close" id="close_modal" data-dismiss="modal"> Close </button>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </div> <!-- End Modal body -->
+  </div> <!-- End Modal content -->
+</div> <!-- End Modal Diag -->
+</div> <!-- End MOdal -->

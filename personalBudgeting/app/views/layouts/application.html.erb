@@ -7,9 +7,28 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
+    <%= render "layouts/partials/nav" %>
+    
+    <% if notice || alert %>
+      <div id="notification-wrapper">
+          <% flash.each do |key, value| %>
+            <% if key == 'notice'%>
+              <p class="notice">
+                <%= value %>
+              </p>
+            <% elsif key == 'alert' %>
+              <p class="alert">
+                <%= value %>
+              </p>
+            <% end %>
+         <% end %>
+      </div>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
