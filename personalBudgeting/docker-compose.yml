@@ -19,7 +19,6 @@ services:
             - CASSANDRA_CLUSTER_NAME=infs_cluster
         volumes:
             - .tmp/db:/var/lib/cassandra0
-            - /data/cassandra0/
 #
 # # Second Cassandra node (in own container).
     cassandra1:
@@ -35,15 +34,14 @@ services:
             - CASSANDRA_CLUSTER_NAME=infs_cluster
         volumes:
             - .tmp/db:/var/lib/cassandra0 #use same volume as cass0 locally
-            - /data/cassandra0/
 
 #####################################
 # Setup Rails Application Container #
 #####################################
 #Interfaces with Cassandra from user perspective
-    rails:
-        image: rails
-        container_name: rails
+    web:
+        build: .
+        container_name: rails_application
         command: bundle exec rails s -p 3000 -b '0.0.0.0'
         volumes:
             - .:/personalBudgeting
@@ -58,88 +56,60 @@ services:
 # Setup Spark Containers #
 ##########################
 # Spark Master node
-    master:
-        image: spark
-        #image: gettyimages/spark
-        container_name: master
-        command: bin/spark-class org.apache.spark.deploy.master.Master -h master
-        hostname: master
-        environment:
-            MASTER: spark://master:7077
-            SPARK_CONF_DIR: /conf
-            SPARK_PUBLIC_DNS: localhost
-        expose:
-            - 7001
-            - 7002
-            - 7003
-            - 7004
-            - 7005
-            - 7077
-            - 6066
-        ports:
-            - 4040:4040
-            - 6066:6066
-            - 7077:7077
-            - 8080:8080
-        volumes:
-            - ./conf/master:/conf
-            - ./data:/tmp/data
-# #
-# # # Spark Worker node (is 1 of 2 worker nodes as of spec update)
-    worker-1:
-        image: spark
-        #image: gettyimages/spark
-        container_name: worker-1
-        command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://master:7077
-        hostname: worker-1
-        environment:
-            SPARK_CONF_DIR: /conf
-            SPARK_WORKER_CORES: 2
-            SPARK_WORKER_MEMORY: 1g
-            SPARK_WORKER_PORT: 8881
-            SPARK_WORKER_WEBUI_PORT: 8081
-            SPARK_PUBLIC_DNS: localhost
-        links:
-            - master
-        expose:
-            - 7012
-            - 7013
-            - 7014
-            - 7015
-            - 8881
-        ports:
-            - 8081:8081
-        volumes:
-            - ./conf/worker-1:/conf
-            - ./data:/tmp/data
-
-# # Spark Worker node (is 2 of 2 worker nodes as of spec update)
-    # worker-2:
+    # master:
     #     image: spark
     #     #image: gettyimages/spark
-    #     container_name: worker-2
-    #     command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://master:7077
-    #     hostname: worker-2
+    #     container_name: spark-master
+    #     command: bin/spark-class org.apache.spark.deploy.master.Master -h master
+    #     hostname: master
     #     environment:
+    #         MASTER: spark://master:7077
     #         SPARK_CONF_DIR: /conf
-    #         SPARK_WORKER_CORES: 2
-    #         SPARK_WORKER_MEMORY: 1g
-    #         SPARK_WORKER_PORT: 8881
-    #         SPARK_WORKER_WEBUI_PORT: 8081
     #         SPARK_PUBLIC_DNS: localhost
-    #     links:
-    #         - master
     #     expose:
-    #         - 7012
-    #         - 7013
-    #         - 7014
-    #         - 7015
-    #         - 8881
+    #         - 7001
+    #         - 7002
+    #         - 7003
+    #         - 7004
+    #         - 7005
+    #         - 7077
+    #         - 6066
     #     ports:
-    #         - 8081:8081
+    #         - 4040:4040
+    #         - 6066:6066
+    #         - 7077:7077
+    #         - 8080:8080
     #     volumes:
-    #         - ./conf/worker:/conf
+    #         - ./conf/master:/conf
     #         - ./data:/tmp/data
+#
+# # Spark Worker node (is 1 of 1 worker nodes as of spec update)
+#     worker:
+#         image: spark
+#         #image: gettyimages/spark
+#         container_name: spark-worker-1
+#         command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://master:7077
+#         hostname: worker
+#         environment:
+#             SPARK_CONF_DIR: /conf
+#             SPARK_WORKER_CORES: 2
+#             SPARK_WORKER_MEMORY: 1g
+#             SPARK_WORKER_PORT: 8881
+#             SPARK_WORKER_WEBUI_PORT: 8081
+#             SPARK_PUBLIC_DNS: localhost
+#         links:
+#             - master
+#         expose:
+#             - 7012
+#             - 7013
+#             - 7014
+#             - 7015
+#             - 8881
+#         ports:
+#             - 8081:8081
+#         volumes:
+#             - ./conf/worker:/conf
+#             - ./data:/tmp/data
 #
 # ############################
 # # Setup Zeppelin Container #
@@ -147,27 +117,26 @@ services:
 #     #     volumes:
 #     #         - ./data:/zeppelin/data
 #
-    zeppelin:
-        image: oonlyo/zeppelin:0.8 #dylanmei/zeppelin:latest
-        hostname: zeppelin
-        container_name: zeppelin
-        environment:
-            ZEPPELIN_PORT: 8090
-            ZEPPELIN_JAVA_OPTS: "-Dspark.driver.port=5432"
-            SPARK_SUBMIT_OPTIONS: >-
-              --conf spark.driver.host=localhost
-              --conf spark.driver.port=7077
-              --conf spark.es.port=9200
-              --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11
-              --conf spark.cassandra.connection.host=cassandra0
-
-        #MASTER: spark://master:7077
-        links:
-            - cassandra0
-            - master
-        ports:
-            - 8090:8090
-            - 8091:8091
-        volumes:
-            - ./notebook:/opt/zeppelin/notebook
-            - /data/notebook/
+#     zeppelin:
+#         image: oonlyo/zeppelin:0.8 #dylanmei/zeppelin:latest
+#         hostname: zeppelin
+#         container_name: zeppelin
+#         environment:
+#             ZEPPELIN_PORT: 8090
+#             ZEPPELIN_JAVA_OPTS: "-Dspark.driver.port=5432"
+#             SPARK_SUBMIT_OPTIONS: >-
+#               --conf spark.driver.host=localhost
+#               --conf spark.driver.port=7077
+#               --conf spark.es.port=9200
+#               --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11
+#               --conf spark.cassandra.connection.host=cassandra0
+#
+#         #MASTER: spark://master:7077
+#         links:
+#             - cassandra0
+#             - master
+#         ports:
+#             - 8090:8090
+#             - 8091:8091
+#         volumes:
+#             - ./notebook:/opt/zeppelin/notebook

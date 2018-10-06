@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: some-cassandra
+  labels:
+    name: some-cassandra
+spec:
+  containers:
+    - image: launcher.gcr.io/google/cassandra3
+      name: cassandra

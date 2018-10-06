@@ -1,0 +1,23 @@
+kind: Service
+apiVersion: v1
+metadata:
+  #Service name
+  name: cassandra-svc
+spec:
+  selector:
+    app: infs3208-assignment2
+  ports:
+    - protocol: TCP
+      port: 9042
+      targetPort: 9042
+  type: LoadBalancer
+
+  name: rails-svc
+spec:
+  selector:
+    app: infs3208-assignment2
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+  type: LoadBalancer

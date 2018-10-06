@@ -6,3 +6,5 @@ COPY Gemfile /personalBudgeting/Gemfile
 COPY Gemfile.lock /personalBudgeting/Gemfile.lock
 RUN bundle install
 COPY . /personalBudgeting
+
+CMD ./start-dev.sh
