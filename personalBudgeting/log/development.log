@@ -12395,3 +12395,1830 @@ Processing by BudgetController#show as HTML
 Completed 200 OK in 387ms (Views: 256.6ms)
 
 
+Started GET "/" for 172.18.0.1 at 2018-10-05 14:41:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+Completed 500 Internal Server Error in 3447ms
+
+
+  
+Cassandra::Errors::SyntaxError (line 0:-1 no viable alternative at input '<EOF>'):
+  
+app/controllers/budget_controller.rb:12:in `show'
+Started GET "/" for 172.18.0.1 at 2018-10-05 14:41:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:19:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 172.18.0.1 at 2018-10-05 14:41:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:19:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 172.18.0.1 at 2018-10-05 14:42:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+Completed 500 Internal Server Error in 262ms
+
+
+  
+Cassandra::Errors::SyntaxError (line 0:-1 no viable alternative at input '<EOF>'):
+  
+app/controllers/budget_controller.rb:12:in `show'
+Started GET "/" for 172.18.0.1 at 2018-10-05 14:42:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'show/1' could not be found for BudgetController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2018-10-05 14:42:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'show/:1' could not be found for BudgetController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2018-10-05 14:42:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+CQL (ERROR) SELECT * FROM posts LIMIT 1000
+  Rendered posts/index.html.erb within layouts/application (12595.7ms)
+Completed 500 Internal Server Error in 12761ms
+
+
+  
+ActionView::Template::Error (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::UnavailableError: Cannot achieve consistency level QUORUM)):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @posts.each do |post| %>
+    16:       <tr>
+    17:         <td><%= post.title %></td>
+    18:         <td><%= post.body %></td>
+  
+app/views/posts/index.html.erb:15:in `_app_views_posts_index_html_erb__2472962115962008352_47386266604140'
+Started GET "/" for 172.18.0.1 at 2018-10-05 14:43:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+Redirected to http://localhost:3000/myBudget/1
+Completed 302 Found in 1ms
+
+
+Started GET "/myBudget/1" for 172.18.0.1 at 2018-10-05 14:43:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"1"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (960.2ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 3275ms (Views: 1339.1ms)
+
+
+Started GET "/" for 172.18.0.1 at 2018-10-05 14:43:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+Redirected to http://localhost:3000/myBudget/1
+Completed 302 Found in 4ms
+
+
+Started GET "/myBudget/1" for 172.18.0.1 at 2018-10-05 14:43:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"1"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (22.4ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 3072ms (Views: 168.1ms)
+
+
+Started POST "/update_values" for 172.18.0.1 at 2018-10-05 14:43:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#update_values as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7RfT2zz11B6ImkfD1VahocpqtqOrxnCwBqxxddIQCJQjTPXk+EELYpRiy8DOaHlO9Gw5S27wrKHP+0U1/K3x9g==", "selected_user"=>"5", "commit"=>"Update user"}
+Redirected to http://localhost:3000/myBudget/5
+Completed 302 Found in 2ms
+
+
+Started GET "/myBudget/5" for 172.18.0.1 at 2018-10-05 14:43:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"5"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (23.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 2411ms (Views: 186.5ms)
+
+
+Started GET "/myBudget/5" for 172.18.0.1 at 2018-10-05 14:43:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"5"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (33.9ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 922ms (Views: 235.3ms)
+
+
+Started GET "/myBudget/5" for 172.18.0.1 at 2018-10-05 14:44:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"5"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (24.9ms)
+  Rendered layouts/partials/_nav.html.erb (0.8ms)
+Completed 200 OK in 1177ms (Views: 214.9ms)
+
+
+Started GET "/myBudget/5" for 172.18.0.1 at 2018-10-05 14:45:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"5"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (32.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 3396ms (Views: 237.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:45:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 78ms
+
+
+  
+NoMethodError (undefined method `set_post' for #<PostsController:0x00005631f3612940>):
+  
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:46:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 95ms
+
+
+  
+NoMethodError (undefined method `set_post' for #<PostsController:0x00007f3fc86cc578>):
+  
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:46:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 108ms
+
+
+  
+NoMethodError (undefined method `set_post' for #<PostsController:0x00007f3fc405e078>):
+  
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:46:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 231ms (Views: 218.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:47:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 60ms
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+     5: 
+     6:         <div class="col-sm mt-5">
+     7:         <%= form_tag(:controller => "budget", :action => "update_values") do %>
+     8:             <%= select_tag 'selected_user', options_for_select(@users.map { |obj| [obj['email'], obj['userid']] }) %>
+     9:             <%= submit_tag("Update user", :class => "btn-secondary")%>
+    10:         <% end %>
+    11:         </div>
+  
+app/views/posts/show.html.erb:8:in `block in _app_views_posts_show_html_erb___1469398813483698891_47386263864460'
+app/views/posts/show.html.erb:7:in `_app_views_posts_show_html_erb___1469398813483698891_47386263864460'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:47:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 231ms (Views: 218.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:47:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 179ms (Views: 167.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:48:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 182ms (Views: 166.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:48:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 184ms (Views: 166.4ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:48:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 167ms (Views: 147.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:48:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 173ms (Views: 157.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:48:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 195ms (Views: 173.7ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:49:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 169ms (Views: 149.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:52:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 1095ms
+
+
+  
+SyntaxError (/personalBudgeting/app/views/posts/show.html.erb:23: syntax error, unexpected '}', expecting =>
+...row['month']} / #{{row['year']}}" );@output_buffer.safe_appe...
+...                              ^
+/personalBudgeting/app/views/posts/show.html.erb:37: unterminated string meets end of file
+          end
+             ^
+/personalBudgeting/app/views/posts/show.html.erb:37: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/posts/show.html.erb:23: syntax error, unexpected '}', expecting =>
+app/views/posts/show.html.erb:37: unterminated string meets end of file
+app/views/posts/show.html.erb:37: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:52:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 1624ms (Views: 164.4ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:52:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 2091ms (Views: 153.6ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:53:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 1073ms (Views: 190.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:53:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 2801ms
+
+
+  
+Cassandra::Errors::SyntaxError (line 1:24 no viable alternative at input 'orderby' (SELECT * FROM [mat_gen_y] orderby...)):
+  
+app/controllers/posts_controller.rb:14:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:54:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 178ms
+
+
+  
+Cassandra::Errors::InvalidError (ORDER BY is only supported when the partition key is restricted by an EQ or an IN.):
+  
+app/controllers/posts_controller.rb:14:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:54:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 1774ms
+
+
+  
+Cassandra::Errors::InvalidError (ORDER BY is only supported when the partition key is restricted by an EQ or an IN.):
+  
+app/controllers/posts_controller.rb:14:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:56:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 3188ms
+
+
+  
+Cassandra::Errors::InvalidError (ORDER BY is only supported when the partition key is restricted by an EQ or an IN.):
+  
+app/controllers/posts_controller.rb:14:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:56:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 2314ms
+
+
+  
+Cassandra::Errors::SyntaxError (line 1:33 no viable alternative at input '(' (...* FROM mat_gen_y ORDER BY [(]...)):
+  
+app/controllers/posts_controller.rb:14:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:56:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 808ms
+
+
+  
+Cassandra::Errors::SyntaxError (line 1:33 no viable alternative at input '(' (...* FROM mat_gen_y ORDER BY [(]...)):
+  
+app/controllers/posts_controller.rb:14:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:57:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 3440ms (Views: 191.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:58:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 337ms (Views: 178.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:58:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/partials/_nav.html.erb (1.1ms)
+Completed 200 OK in 1629ms (Views: 236.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 14:58:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 3010ms (Views: 187.9ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:09:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (8.0ms)
+  Rendered layouts/partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 2193ms (Views: 1585.4ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:12:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 167ms
+
+
+  
+Cassandra::Errors::InvalidError (unconfigured table mat_gen_mill):
+  
+app/controllers/posts_controller.rb:16:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:12:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 332ms (Views: 157.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:13:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/partials/_nav.html.erb (0.7ms)
+Completed 200 OK in 360ms (Views: 216.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:13:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/partials/_nav.html.erb (0.8ms)
+Completed 200 OK in 326ms (Views: 188.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:18:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 313ms (Views: 203.9ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:18:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 311ms (Views: 184.6ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:18:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 298ms (Views: 159.7ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:18:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 318ms (Views: 195.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:19:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 321ms (Views: 177.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:19:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 339ms (Views: 220.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:19:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 330ms (Views: 192.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:20:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 388ms (Views: 276.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:20:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 260ms (Views: 161.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:20:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 394ms (Views: 241.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:20:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 303ms (Views: 164.9ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:21:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/partials/_nav.html.erb (1.2ms)
+Completed 200 OK in 382ms (Views: 243.4ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:21:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 286ms (Views: 157.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:21:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 400ms (Views: 249.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:21:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 324ms (Views: 205.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:21:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 350ms (Views: 233.4ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:22:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 347ms (Views: 242.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:23:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 319ms (Views: 179.9ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:23:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 328ms (Views: 190.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:23:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 374ms (Views: 200.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:23:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 354ms (Views: 232.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:23:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 265ms (Views: 153.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:24:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 339ms (Views: 206.1ms)
+
+
+Started GET "/myBudget/1" for 172.18.0.1 at 2018-10-05 15:24:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"1"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (89.4ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 476ms (Views: 276.7ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:24:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 238ms (Views: 155.6ms)
+
+
+Started GET "/myBudget/1" for 172.18.0.1 at 2018-10-05 15:24:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"1"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (26.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 349ms (Views: 183.9ms)
+
+
+Started POST "/update_values" for 172.18.0.1 at 2018-10-05 15:24:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#update_values as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u4qglmb2j9liUxipLqJjCO4Y9qpep1Qu5yISinAsZImc7T9eOv58WDTTcae6YhkzkihVkmyU99GQXewjgkb7AA==", "selected_user"=>"13", "commit"=>"Update user"}
+Redirected to http://localhost:3000/myBudget/13
+Completed 302 Found in 3ms
+
+
+Started GET "/myBudget/13" for 172.18.0.1 at 2018-10-05 15:24:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"13"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (35.6ms)
+  Rendered layouts/partials/_nav.html.erb (5.9ms)
+Completed 200 OK in 356ms (Views: 234.4ms)
+
+
+Started POST "/update_values" for 172.18.0.1 at 2018-10-05 15:24:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#update_values as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BtgKWbUsgMlVFNo0WUv2SGt46kDiZn9PCXXsvklhfpTIgyxmcZhftUnsVjdCdS6nVX5lqCdQo17AItj+Z9yH9g==", "selected_user"=>"1", "commit"=>"Update user"}
+Redirected to http://localhost:3000/myBudget/1
+Completed 302 Found in 2ms
+
+
+Started GET "/myBudget/1" for 172.18.0.1 at 2018-10-05 15:24:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"1"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (22.3ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 278ms (Views: 171.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:24:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 254ms (Views: 168.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:25:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 308ms (Views: 202.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:26:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 141ms
+
+
+  
+SyntaxError (/personalBudgeting/app/views/posts/show.html.erb:82: syntax error, unexpected '}', expecting ']'
+...ames.map { |obj| [obj['name'] }) );@output_buffer.safe_appen...
+...                              ^
+/personalBudgeting/app/views/posts/show.html.erb:84: syntax error, unexpected keyword_end, expecting '}'
+                     end 
+                     ^~~
+/personalBudgeting/app/views/posts/show.html.erb:93: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/personalBudgeting/app/views/posts/show.html.erb:95: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/posts/show.html.erb:82: syntax error, unexpected '}', expecting ']'
+app/views/posts/show.html.erb:84: syntax error, unexpected keyword_end, expecting '}'
+app/views/posts/show.html.erb:93: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/posts/show.html.erb:95: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:27:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 112ms
+
+
+  
+Cassandra::Errors::SyntaxError (line 1:0 no viable alternative at input 'Describe' ([Describe]...)):
+  
+app/controllers/posts_controller.rb:13:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:27:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 99ms
+
+
+  
+Cassandra::Errors::SyntaxError (line 1:0 no viable alternative at input 'describe' ([describe]...)):
+  
+app/controllers/posts_controller.rb:13:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:28:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 93ms
+
+
+  
+Cassandra::Errors::SyntaxError (line 1:0 no viable alternative at input 'describe' ([describe]...)):
+  
+app/controllers/posts_controller.rb:13:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:31:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 167ms
+
+
+  
+SyntaxError (/personalBudgeting/app/views/posts/show.html.erb:82: syntax error, unexpected '}', expecting ']'
+...ames.map { |obj| [obj['name'] }) );@output_buffer.safe_appen...
+...                              ^
+/personalBudgeting/app/views/posts/show.html.erb:84: syntax error, unexpected keyword_end, expecting '}'
+                     end 
+                     ^~~
+/personalBudgeting/app/views/posts/show.html.erb:93: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/personalBudgeting/app/views/posts/show.html.erb:95: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/posts/show.html.erb:82: syntax error, unexpected '}', expecting ']'
+app/views/posts/show.html.erb:84: syntax error, unexpected keyword_end, expecting '}'
+app/views/posts/show.html.erb:93: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/posts/show.html.erb:95: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:31:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 137ms
+
+
+  
+SyntaxError (/personalBudgeting/app/views/posts/show.html.erb:93: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:93: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:31:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 129ms
+
+
+  
+SyntaxError (/personalBudgeting/app/views/posts/show.html.erb:93: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:93: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:32:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 159ms
+
+
+  
+SyntaxError (/personalBudgeting/app/views/posts/show.html.erb:94: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:94: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:32:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 170ms
+
+
+  
+SyntaxError (/personalBudgeting/app/views/posts/show.html.erb:94: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:94: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:33:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 184ms
+
+
+  
+SyntaxError (/personalBudgeting/app/views/posts/show.html.erb:94: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:94: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:33:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 228ms
+
+
+  
+SyntaxError (/personalBudgeting/app/views/posts/show.html.erb:94: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:94: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:34:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (4.2ms)
+  Rendered layouts/partials/_nav.html.erb (0.8ms)
+Completed 200 OK in 424ms (Views: 264.4ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:38:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:39:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:39:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 267ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"create_view", :controller=>"pages"}):
+    80:                 <div class="card-body">
+    81:                     <% counter = 1 %>
+    82:                     <% select1 = "" %>
+    83:                     <%= form_tag(:controller => "pages", :action => "create_view") do %>
+    84:                         <%=@tableNames.inspect %>
+    85:                         <%#= submit_tag("Update user", :class => "btn-secondary")%>
+    86:                         <%= text_field_tag 'select1', "", placeholder: "Column to select", :class => "form-control field_default text-center"%>
+  
+app/views/posts/show.html.erb:83:in `_app_views_posts_show_html_erb___2632647344651972674_70230637335960'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:39:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (6.3ms)
+  Rendered layouts/partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 525ms (Views: 348.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:39:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (9.0ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 396ms (Views: 232.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:39:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (8.5ms)
+  Rendered layouts/partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 345ms (Views: 198.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:40:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 502ms (Views: 257.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:40:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (5.6ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 389ms (Views: 238.7ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:41:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (13.8ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 387ms (Views: 221.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:41:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (9.9ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 364ms (Views: 173.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:41:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (25.4ms)
+  Rendered layouts/partials/_nav.html.erb (1.7ms)
+Completed 200 OK in 550ms (Views: 288.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:41:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (8.4ms)
+  Rendered layouts/partials/_nav.html.erb (2.7ms)
+Completed 200 OK in 529ms (Views: 309.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:42:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (19.5ms)
+  Rendered layouts/partials/_nav.html.erb (3.4ms)
+Completed 200 OK in 651ms (Views: 439.6ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:42:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (33.3ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 507ms (Views: 277.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:42:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (12.0ms)
+  Rendered layouts/partials/_nav.html.erb (1.5ms)
+Completed 200 OK in 523ms (Views: 313.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:42:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (7.8ms)
+  Rendered layouts/partials/_nav.html.erb (3.6ms)
+Completed 200 OK in 474ms (Views: 249.6ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:42:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (15.3ms)
+  Rendered layouts/partials/_nav.html.erb (3.2ms)
+Completed 200 OK in 573ms (Views: 338.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:42:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (10.2ms)
+  Rendered layouts/partials/_nav.html.erb (2.9ms)
+Completed 200 OK in 590ms (Views: 354.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:43:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (13.0ms)
+  Rendered layouts/partials/_nav.html.erb (17.7ms)
+Completed 200 OK in 610ms (Views: 435.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:43:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (25.6ms)
+  Rendered layouts/partials/_nav.html.erb (3.1ms)
+Completed 200 OK in 759ms (Views: 546.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:43:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/partials/_nav.html.erb (6.3ms)
+Completed 200 OK in 554ms (Views: 364.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:43:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (15.3ms)
+  Rendered layouts/partials/_nav.html.erb (2.5ms)
+Completed 200 OK in 936ms (Views: 518.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:43:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (8.6ms)
+  Rendered layouts/partials/_nav.html.erb (2.0ms)
+Completed 200 OK in 519ms (Views: 235.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:44:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (37.4ms)
+  Rendered layouts/partials/_nav.html.erb (2.5ms)
+Completed 200 OK in 579ms (Views: 309.7ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:44:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (16.1ms)
+  Rendered layouts/partials/_nav.html.erb (2.5ms)
+Completed 200 OK in 826ms (Views: 493.7ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:44:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (86.4ms)
+  Rendered layouts/partials/_nav.html.erb (4.1ms)
+Completed 200 OK in 835ms (Views: 543.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:44:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (27.0ms)
+  Rendered layouts/partials/_nav.html.erb (3.6ms)
+Completed 200 OK in 898ms (Views: 579.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:44:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (24.6ms)
+  Rendered layouts/partials/_nav.html.erb (3.1ms)
+Completed 200 OK in 742ms (Views: 454.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:44:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (17.6ms)
+  Rendered layouts/partials/_nav.html.erb (3.9ms)
+Completed 200 OK in 769ms (Views: 430.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:45:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (19.0ms)
+  Rendered layouts/partials/_nav.html.erb (5.3ms)
+Completed 200 OK in 1032ms (Views: 589.9ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:45:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (17.4ms)
+  Rendered layouts/partials/_nav.html.erb (4.5ms)
+Completed 200 OK in 1223ms (Views: 745.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:45:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (15.3ms)
+  Rendered layouts/partials/_nav.html.erb (2.8ms)
+Completed 200 OK in 734ms (Views: 383.9ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:45:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (9.3ms)
+  Rendered layouts/partials/_nav.html.erb (2.4ms)
+Completed 200 OK in 981ms (Views: 701.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:46:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (55.5ms)
+  Rendered layouts/partials/_nav.html.erb (3.9ms)
+Completed 200 OK in 1065ms (Views: 643.7ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:46:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (181.2ms)
+  Rendered layouts/partials/_nav.html.erb (8.9ms)
+Completed 200 OK in 2833ms (Views: 1175.4ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:46:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (17.9ms)
+  Rendered layouts/partials/_nav.html.erb (8.0ms)
+Completed 200 OK in 1057ms (Views: 643.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:46:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (230.5ms)
+  Rendered layouts/partials/_nav.html.erb (3.9ms)
+Completed 200 OK in 1561ms (Views: 952.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:47:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (166.3ms)
+  Rendered layouts/partials/_nav.html.erb (22.6ms)
+Completed 200 OK in 1102ms (Views: 746.7ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:47:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (41.2ms)
+  Rendered layouts/partials/_nav.html.erb (14.0ms)
+Completed 200 OK in 1198ms (Views: 812.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:47:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (13.5ms)
+  Rendered layouts/partials/_nav.html.erb (20.5ms)
+Completed 200 OK in 1168ms (Views: 774.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:47:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (29.1ms)
+  Rendered layouts/partials/_nav.html.erb (5.1ms)
+Completed 200 OK in 1544ms (Views: 1000.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:47:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 10297ms (Views: 156.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:48:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 23ms
+
+
+  
+Cassandra::Errors::NoHostsAvailable (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::IOError: Connection refused - connect(2) for 172.18.0.2:9042)):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:48:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+Cassandra::Errors::NoHostsAvailable (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::IOError: Connection refused - connect(2) for 172.18.0.2:9042)):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:48:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 5ms
+
+
+  
+Cassandra::Errors::NoHostsAvailable (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::IOError: Connection refused - connect(2) for 172.18.0.2:9042)):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:48:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 5ms
+
+
+  
+Cassandra::Errors::NoHostsAvailable (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::IOError: Connection refused - connect(2) for 172.18.0.2:9042)):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:48:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 4ms
+
+
+  
+Cassandra::Errors::NoHostsAvailable (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::IOError: Connection refused - connect(2) for 172.18.0.2:9042)):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:48:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+Cassandra::Errors::NoHostsAvailable (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::IOError: Connection refused - connect(2) for 172.18.0.2:9042)):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:48:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 4ms
+
+
+  
+Cassandra::Errors::NoHostsAvailable (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::IOError: Connection refused - connect(2) for 172.18.0.2:9042)):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:48:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+Cassandra::Errors::NoHostsAvailable (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::IOError: Connection refused - connect(2) for 172.18.0.2:9042)):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:48:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+Completed 500 Internal Server Error in 16ms
+
+
+  
+Cassandra::Errors::NoHostsAvailable (All attempted hosts failed: 172.18.0.2 (Cassandra::Errors::IOError: Connection refused - connect(2) for 172.18.0.2:9042)):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:49:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 2709ms (Views: 2389.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:50:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (65.5ms)
+  Rendered layouts/partials/_nav.html.erb (1.3ms)
+Completed 200 OK in 994ms (Views: 439.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:50:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 985ms (Views: 180.8ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:50:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (6.4ms)
+  Rendered layouts/partials/_nav.html.erb (1.8ms)
+Completed 200 OK in 428ms (Views: 239.6ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:50:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/partials/_nav.html.erb (0.5ms)
+Completed 200 OK in 441ms (Views: 233.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:50:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 405ms (Views: 220.1ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:51:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 472ms (Views: 282.3ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:51:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (6.3ms)
+  Rendered layouts/partials/_nav.html.erb (0.6ms)
+Completed 200 OK in 827ms (Views: 576.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:56:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (6.0ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 390ms (Views: 186.2ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:56:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 424ms (Views: 183.5ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 15:58:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (6.3ms)
+  Rendered layouts/partials/_nav.html.erb (0.3ms)
+Completed 200 OK in 360ms (Views: 148.0ms)
+
+
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 16:02:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/personalBudgeting/app/controllers/posts_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/posts_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 16:02:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/personalBudgeting/app/controllers/posts_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/posts_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/matviews" for 172.18.0.1 at 2018-10-05 16:03:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 528ms (Views: 338.0ms)
+
+
+Started GET "/myBudget/1" for 172.18.0.1 at 2018-10-05 16:03:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BudgetController#show as HTML
+  Parameters: {"user"=>"1"}
+  Rendering budget/show.html.erb within layouts/application
+  Rendered budget/show.html.erb within layouts/application (106.3ms)
+  Rendered layouts/partials/_nav.html.erb (0.4ms)
+Completed 200 OK in 579ms (Views: 349.0ms)
+
+

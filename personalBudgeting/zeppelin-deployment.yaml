@@ -1,0 +1,46 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.16.0 ()
+  creationTimestamp: null
+  labels:
+    io.kompose.service: zeppelin
+  name: zeppelin
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: zeppelin
+    spec:
+      containers:
+      - env:
+        - name: SPARK_SUBMIT_OPTIONS
+          value: --conf spark.driver.host=localhost --conf spark.driver.port=7077
+            --conf spark.es.port=9200 --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11
+            --conf spark.cassandra.connection.host=cassandra0
+        - name: ZEPPELIN_JAVA_OPTS
+          value: -Dspark.driver.port=5432
+        - name: ZEPPELIN_PORT
+          value: "8090"
+        image: oonlyo/zeppelin:0.8
+        name: zeppelin
+        ports:
+        - containerPort: 8090
+        - containerPort: 8091
+        resources: {}
+        volumeMounts:
+        - mountPath: /opt/zeppelin/notebook
+          name: zeppelin-claim0
+      hostname: zeppelin
+      restartPolicy: Always
+      volumes:
+      - name: zeppelin-claim0
+        persistentVolumeClaim:
+          claimName: zeppelin-claim0
+status: {}

@@ -12,8 +12,10 @@ Rails.application.routes.draw do
   post 'myBudget/:user/update_income_row/:row', to: 'budget#update_income_row'
   post 'myBudget/:user/update_expense_row/:row', to: 'budget#update_expense_row'
   post 'myBudget/:user/remove_expense/:row', to: 'budget#remove_expense'
-    post 'myBudget/:user/remove_income/:row', to: 'budget#remove_income'
+  post 'myBudget/:user/remove_income/:row', to: 'budget#remove_income'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  post 'posts/create_view', to: 'pages#create_view'
+  get 'matviews', to: 'posts#show'
   root 'posts#index'
 end
