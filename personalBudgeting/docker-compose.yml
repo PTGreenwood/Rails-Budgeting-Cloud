@@ -83,7 +83,7 @@ services:
             - ./conf/master:/conf
             - ./data:/tmp/data
 #
-# # Spark Worker node (is 1 of 1 worker nodes as of spec update)
+# # Spark Worker node (is 1 of 2 worker nodes as of spec update)
     worker:
         image: spark
         #image: gettyimages/spark
@@ -107,6 +107,34 @@ services:
             - 8881
         ports:
             - 8081:8081
+        volumes:
+            - ./conf/worker:/conf
+            - ./data:/tmp/data
+
+# # Spark Worker node (is 1 of 1 worker nodes as of spec update)
+    worker-2:
+        image: spark
+        #image: gettyimages/spark
+        container_name: spark-worker-2
+        command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://master:7077
+        hostname: worker-2
+        environment:
+            SPARK_CONF_DIR: /conf
+            SPARK_WORKER_CORES: 2
+            SPARK_WORKER_MEMORY: 1g
+            SPARK_WORKER_PORT: 8882
+            SPARK_WORKER_WEBUI_PORT: 8082
+            SPARK_PUBLIC_DNS: localhost
+        links:
+            - master
+        expose:
+            - 7012
+            - 7013
+            - 7014
+            - 7015
+            - 8882
+        ports:
+            - 8082:8082
         volumes:
             - ./conf/worker:/conf
             - ./data:/tmp/data
