@@ -1,4 +1,4 @@
-# rails_budgeting
+# Rails-Budgeting-Cloud
 INFS3208 - Assessment 2 Scalable Cloud Computing Personalised Budgeting APPlication
 
 -- Goal
